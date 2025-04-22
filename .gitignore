@@ -1,0 +1,6 @@
+.venv
+credentials.json
+images/*
+resized/*
+landmarks.csv
+.DS_Store
