@@ -4,3 +4,4 @@ images/*
 resized/*
 landmarks.csv
 .DS_Store
+.env

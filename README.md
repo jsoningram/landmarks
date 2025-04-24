@@ -47,8 +47,8 @@ project-root/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourname/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/jsoningram/landmarks.git
+cd landmarks
 ```
 
 ### 2. Create a virtual environment and install dependencies
@@ -61,7 +61,8 @@ pip install -r requirements.txt
 ### 3. Set up Google Cloud Vision
 - Enable the **Vision API** in your Google Cloud Console.
 - Download your **service account credentials** as `credentials.json` and place it in the project root.
-
+- Generate a Gemini API key in the [AI Studio](https://aistudio.google.com/apikey)
+- Store the Gemini API key in a `.env` file at the root of the project as `GOOGLE_AI_API_KEY`
 ---
 
 ## Running the Program

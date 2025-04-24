@@ -1,5 +1,6 @@
 import csv
 import os
+from src.utils.vision import generate_image_description
 
 Csv_Path = 'landmarks.csv'
 
@@ -41,10 +42,12 @@ def write_csv(file, landmarks):
                     }
                 )
         else:
+            description = generate_image_description(file)
+
             writer.writerow(
                 {
                     'Image': file,
-                    'Description': 'unknown',
+                    'Description': description,
                     'Confidence Score': '',
                     'Longitude': '',
                     'Latitude': '',
